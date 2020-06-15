@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+	<div class="container" style="max-width: 500px">
+		<h1>Pre-paid Parking Form</h1>
+		<form id="parking-form">
+    
+
+			<div class="input-field" id="name-field">
+						<label for="name">Name</label>
+          <input id="name" type="text" id="name" required><br>
+        </div>
+        <div class="input-field" id="car-field">
+          <label for="car-year">Car</label>
+          <div class="input-group">
+            <input id="car-year" placeholder="Year" type="text" required><br>
+            <input id="car-make" placeholder="Make" type="text" required><br>
+            <input id="car-model" placeholder="Model" type="text" required><br>
+          </div>
+        </div>
+        <div class="input-field" id="start-date-field">
+          <label for="start-date">Date parking</label>
+          <input id="start-date" type="date" id="start-date" required><br>
+          <p style="color:red" "font-size:10px" class="input-hit">Enter today's date.</p>
+        </div>
+        <div class="input-field" id="days-field">
+          <label for="days">Number of days</label>
+          <input id="days" type="text" id="days" required><br>
+          <p style="color:red" "font-size:10px" class="input-hit">Enter 2-Digits between 01 - 30.</p>
+        </div>
+        <div class="input-field" id="credit-card-field">
+          <label for="credit-card">Credit Card</label>
+          <input id="credit-card" type="text" id="credit-card" required><br>
+          <p style="color:red" "font-size:10px" class="input-hit">Enter all 16-Digits with no spaces.</p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-field" id="cvv-field">
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="text">
+              <p style="color:red" "font-size:10px" class="input-hit">Enter 3-Digits on the back of card.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-field" id="expiration-field">
+              <label for="expiration">Expiration</label>
+              <input id="expiration" type="text" placeholder="MM/YY">
+              <p style="color:red" "font-size:10px" class="input-hit">2-Digits Month/Year</p>
+            </div>
+          </div>
+        </div>
+        <div class="input-field">
+          <button id="submit-button" type="submit">Make reservation</button>
+        </div>
+      </form>
+      <div id="total"></div>
+      <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+			inserted on lines #15 & #16 - turned all box outlines green
+      
+      	<div class="input-field input-valid"> -->
+					<div class="input-field input-invalid">
+
+          // //console.log('Add validation!');
+// function getinputfield(inputfieldId) {
+//   let inputField = document.getElementById(input-fieldId);
+//   console.log(inputfield)
+// }
+//<div class="input-field">
+//  <button id="submit-button" type="submit">Make reservation</button>
+//       </div>
+//
+// TODO: when push "makereservation" button check all other <div class = form //fields are valid then "submit" if not put red line abround 'form box' and do //not 'submit'....
+// first try code on 'name' box on form
